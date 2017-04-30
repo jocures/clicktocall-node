@@ -61,8 +61,8 @@ module.exports = function(app) {
         var salesNumber = request.params.salesNumber;
         var twimlResponse = new twilio.TwimlResponse();
 
-        twimlResponse.say('Thanks for contacting our sales department. Our ' +
-                          'next available representative will take your call. ',
+        twimlResponse.say('Thanks for calling Helping Up Mission.' +
+                          '. ',
                           { voice: 'alice' });
 
         twimlResponse.dial(salesNumber);
